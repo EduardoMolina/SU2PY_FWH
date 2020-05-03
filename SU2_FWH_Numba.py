@@ -614,7 +614,7 @@ if __name__ == '__main__':
 
 	# To Extract pressure data to CSV files please comment main() and uncomment this 3 lines
 
-	#csv_dir = '/media/esmolina/Backup/Tandem/Lz3p0_Dz0p02/PyWrapper/Data'
+	#csv_dir = '.'
 	#data_file = CSVToArray(csv_dir)
 	#write_binary_fwh(data_file)
 	
