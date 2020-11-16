@@ -294,7 +294,7 @@ def Compute_RetardedTime_WT(pp_ret, data, surface_geo, nSample, nPanel, nObserve
 				
 				pp_ret[iObserver,iPanel,iSample] = Lr_dot / (a_inf * R * (1.0 - Mr)**2) + \
 													 (Lr[iObserver,iPanel,iSample] - Lm[iPanel,iSample])/(R**2 * (1.0 - Mr)**2) + \
-													 (Lr[iObserver,iPanel,iSample]*(Mr - FreeStreamMach**2))/(R**3 * (1.0 - Mr)**3)
+													 (Lr[iObserver,iPanel,iSample]*(Mr - FreeStreamMach**2))/(R**2 * (1.0 - Mr)**3)
 
 				pp_ret[iObserver,iPanel,iSample] = pp_ret[iObserver,iPanel,iSample]*dS/(4.0*np.pi)
 
